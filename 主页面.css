@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(201, 211, 246);
+    background: url(./图片/背景3.jpg) left;
+    background-size: contain;
+}
+.box1{
+    width: 1000px;
+    height: 885px;
+    border: 1px white solid;
+    margin: 0 auto;
+    background-color: rgb(76, 151, 173);
+}
+.box2{
+    width: 1000px;
+    height: 150px;
+    border: 1px black solid;
+    background: url(./图片/背景1.jpg) no-repeat top;
+}
+#h1{
+    text-align: center;
+    font-size: 100px;
+    color: rgb(43, 51, 92);
+}
+.box3{
+    width: 1000px;
+    height: 23px;
+  
+}
+#p1{
+    animation-name:test;
+    animation-duration: 8s;
+	animation-iteration-count: infinite;
+    animation-direction: alternate;
+	animation-timing-function: linear;  
+    color: rgb(3, 28, 75);
+}
+@keyframes test{
+    from{
+        margin-left: 0px;
+    }
+    to{
+        margin-left: 800px;			
+    }
+}
+.box4{
+    width: 1000px;
+    height: 50px;
+    border: 1px black solid;
+}
+a{
+    text-decoration: none;
+    color: rgb(1, 51, 85); 
+    font-size: 18px; 
+}
+th:hover{
+    background-color: rgb(255, 255, 255);
+}
+th{
+    width: 250px;
+    height: 50px;
+    border: 1px white solid;
+}
+.box5{
+    width: 200px;
+    height: 500px;
+    border: 1px white solid;
+    float: left;
+}
+.box6{
+    width: 600px;
+    height: 500px;
+    border: 1px white solid;
+    float: left;
+}
+.box7{
+    width: 197px;
+    height: 500px;
+    border: 1px white solid;
+    margin-left: 803px;
+}
+h4:hover{
+    color: rgb(3, 59, 163);
+}
+h5{
+    font-size: 20px;
+    margin: 5px;
+}
+#img1{
+    width: 600px;
+   height: 400px;
+}
+button{
+    width: 160px;
+    height: 30px;
+    
+}
+#btn{
+    margin-left: 130px;
+    margin-top: 15px;
+}
+#img2{
+    width: 200px;
+}
+#p2{
+    font-size: 20px;
+    margin-left: 28px;
+}
+.box8{
+    width: 1000px;
+    height: 150px;
+    border: 1px white solid;
+}
+#foot{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}

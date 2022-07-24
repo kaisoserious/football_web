@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎光临校园足球社官网</title>
+    <link rel="stylesheet" href="./主页面.css">
+    <script>
+        window.onload=function(){
+            //获取两个按钮
+            var btn1=document.getElementById("btn1");
+            var btn2=document.getElementById("btn2");
+            //获取图片
+            var img=document.getElementsByTagName("img")[0];
+            //存放图片的数组
+            var imgArr=["./图片/合照6.jpeg","./图片/合照7.JPG","./图片/合照8.JPG","./图片/合照9.JPG","./图片/合照10.jpg","./图片/合照1.jpg","./图片/合照2.jpeg","./图片/合照3.jpeg","./图片/合照4.jpeg","./图片/合照5.JPG"]       
+            //绑定单击按钮事件
+            //初始化图片索引为0
+            var index=0;         
+            //上一张
+            btn1.onclick=function(){
+                index--;
+                if(index<0){
+                    alert("已经是第一张了~");
+                    index=0;
+                }       
+                img.src=imgArr[index];         
+            };
+            //下一张
+            btn2.onclick=function(){
+                index++;
+                if(index>9){
+                    alert("已经是最后一张了~");
+                    index=9;
+                }            
+                img.src=imgArr[index];              
+            };
+        };
+    </script>
+
+</head>
+<body>
+    <div class="box1">
+        <div class="box2">
+            <h1 id="h1">校园足球社官网</h1>
+        </div>
+        <div class="box3">
+            <p id="p1"><strong>欢迎光临校园足球社官网~~</strong></p>
+        </div>
+        <div class="box4">
+        <table border="1" rules="all">
+            <tr>
+               <th><a href="./登陆注册页面.html" target="_blank"><h3>登录/注册</h3></a></th>
+               <th><a href="./比赛活动页面.html" target="_blank"><h3>比赛活动</h3></a></th>
+               <th><a href="./球队介绍页面.html" target="_blank"><h3>球队介绍</h3></a></th>
+               <th><a href="./关于比赛帮助页面.html" target="_blank"><h3>帮助</h3></a></th>
+            </tr>
+        </table>
+        </div>
+        <div class="box5">
+            <h3>&nbsp&nbsp公告🔈</h3><br>
+            <h4>&nbsp&nbsp&nbsp&nbsp校园旭峰杯足球比赛正式开赛,各个学院积极备赛🔥</h4><br>
+            <h4>&nbsp&nbsp&nbsp&nbsp旭峰杯淘汰赛紧张进行，落后学院拼尽全力😠</h4><br>
+            <h4>&nbsp&nbsp&nbsp&nbsp旭峰杯淘汰赛正式结束，DP学院遗憾出局😭</h4><br>
+            <h4>&nbsp&nbsp&nbsp&nbsp旭峰杯四强争夺如约而至，足球氛围非常浓厚🦾</h4><br>
+            <h4>&nbsp&nbsp&nbsp&nbsp半决赛结束，计算机学院，经济学院顺利晋级🎉</h4><br>
+            <h4>&nbsp&nbsp&nbsp&nbsp6月16日，旭峰杯决赛（计算机学院VS经济学院）于下午6点正式进行，欢迎大家前来观看比赛⚽</h4>
+        </div>
+        <div class="box6">
+            <h5 align="center"><strong>学院球队合照</strong></h5>
+            <img src="./图片/合照6.jpeg" id="img1">
+            <div id="btn">
+            <button id="btn1">上一张</button>
+            <button id="btn2">下一张</button>
+            </div>
+        </div>
+        <div class="box7"><br>
+            <strong>
+            <p id="p2">《 感悟足球 》</p><br>
+            <p>1、人们总是说人在死之前是成不了传奇的，但是，我就是个活着的传奇。-伊布</p><br>
+            <p>2、你们的爱让我变强，你们的恨让我不可阻挡。-C罗</p><br>
+            <p>3、直到遇到足球，我的人生彻底改变，我记得我第一个足球的样子，在我心里，它就像一颗糖果。-梅西</p><br>
+            <p>4、当亚平宁的微风吹过飘逸的长发，当地中海的湛蓝照进深邃的眼神，当斗士的不屈融入沸腾的血液，当罗马城的永恒写入一生的履历，你依旧波澜不惊如水一般平静。 ——天下足球 《天下足球》</p>
+            </strong>
+        </div>
+        <div class="box8">
+            <div id="foot">
+            <p>版权所有 1905200421 黄凯杰</p>
+            <p>地址：四川大学锦江学院</p>
+            <p>邮箱：752562336@qq.com</p>
+            <p>咨询电话：0898-88233755  88233752  13976113755</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

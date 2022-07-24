@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>热门比赛活动</title>
+    <link rel="stylesheet" href="./比赛活动页面.css">
+    <script>
+        window.onload=function(){
+            //获取图片
+            var img=document.getElementsByTagName("img")[0];
+            //存放图片的数组
+            var imgArr=["./图片/比赛海报1.jpeg","./图片/比赛海报2.jpeg","./图片/比赛海报3.jpeg"];
+            //创建初始索引为0
+            var index=0;
+            //创建一个定时器
+            setInterval(function(){
+                index++;
+                if(index==3){
+                    index=0;
+                }
+                img.src=imgArr[index];       
+            },2000);   
+        };
+    </script>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2">
+            <h1 id="p1"><strong>旭峰杯足球比赛火热进行中🔥</strong></h1>
+        </div>
+        <div class="box3">
+            <p id="p2" align="center"><strong>热门赛事🔥</strong></p>
+            <p id="p3" align="center"><strong>计算机学院VS会计学院</strong></p>
+            <img src="./图片/比赛海报1.jpeg" id="img1">
+            
+        </div>
+        <div class="box4">
+            <table border="1" rules="all" align="center">
+                <tr>
+                    <td colspan="5"><strong>旭峰杯足球比赛</strong></td>
+                </tr>
+                
+
+                <tr>
+                    <td>球队</td>
+                    <td>胜</td>
+                    <td>负</td>
+                    <td>平</td>
+                    <td>积分</td>
+                </tr>
+
+                <tr>
+                    <td>1.经济学院</td>
+                    <td>8</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>24</td>
+                </tr>
+
+                <tr>
+                    <td>2.机械白酒学院</td>
+                    <td>7</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>21</td>
+                </tr>
+
+                <tr>
+                    <td>3.计算机学院</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>16</td>
+                </tr>
+
+                <tr>
+                    <td>4.土木工程学院</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>12</td>
+                </tr>
+
+                <tr>
+                    <td>5.电子学院</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>9</td>
+                </tr>
+
+                <tr>
+                    <td>6.艺术学院</td>
+                    <td>2</td>
+                    <td>6</td>
+                    <td>1</td>
+                    <td>7</td>
+                </tr>
+
+                <tr>
+                    <td>7.会计学院</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>7</td>
+                </tr>
+
+                <tr>
+                    <td>8.文传学院</td>
+                    <td>1</td>
+                    <td>7</td>
+                    <td>0</td>
+                    <td>3</td>
+                </tr>
+            </table>
+
+            <table border="1" rules="all" align="center" id="tb1">
+                <tr>
+                    <td><strong>赛程安排</strong></td>
+                </tr>
+                <tr>
+                    <td>2021-5-31 星期一 17：30 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp经济学院VS文传学院</td>
+                </tr>
+                <tr>
+                    <td>2021-6-1 &nbsp&nbsp星期二 17：30 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp机械白酒学院VS会计学院</td>
+                </tr>
+                <tr>
+                    <td>2021-6-3 &nbsp&nbsp星期四 17：30 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp计算机学院VS艺术学院</td>
+                </tr>
+                <tr>
+                    <td>2021-6-4 &nbsp&nbsp星期五 17：30 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp土木学院VS电子学院</td>
+                </tr>
+                <tr>
+                    <td>2021-6-8 &nbsp&nbsp星期二 17：30 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp计算机VS会计学院</td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div class="box5">
+            <h2 align="center">精彩赛事回顾</h2><br>
+            <h3>2020-12-2 计算机VS土木学院</h3><br>
+            <h4>计算机开出绝妙角球，4号球员头球险些破门</h4><br>
+            <video src="./图片/Rec 0001.mp4" controls></video><br><br>
+            <h4>计算机发起进攻，10号球员展现惊人的过人能力</h4><br>
+            <video src="./图片/Rec 0005.mp4" controls></video>
+        </div>
+
+    </div>
+</body>
+</html>
